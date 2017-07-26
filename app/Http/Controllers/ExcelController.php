@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
+use Phpml\Classification\KNearestNeighbors;
 
 class ExcelController extends Controller
 {
@@ -43,5 +44,9 @@ class ExcelController extends Controller
                     $sheet->rows($cellData);
                 });
             })->export('xls');
+    }
+
+    public function test(){
+
     }
 }
