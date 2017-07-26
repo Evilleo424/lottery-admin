@@ -15,7 +15,7 @@ class CreateSsqTable extends Migration
     {
         Schema::create('ssqs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('periods');
+            $table->string('periods')->unique();
             $table->string('numbers');
             $table->integer('r1');
             $table->integer('r2');
