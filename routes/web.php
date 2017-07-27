@@ -31,6 +31,9 @@ Route::group(['middleware' => 'permissionCheck'],function(){
 
     Route::get('/excel/import','ExcelController@import');
     Route::get('/excel/output','ExcelController@output');
+    Route::get('/phpml/test1','PhpmlController@test1');
+    Route::get('/phpml/test2','PhpmlController@test2');
+    Route::get('/phpml/test3','PhpmlController@test3');
 
 });
 
